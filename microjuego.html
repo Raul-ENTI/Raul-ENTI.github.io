@@ -3,12 +3,59 @@
 	<head>
 		<title>Raul Sanchez</title>
 		<link rel="stylesheet" href="estilo.css"/>
+		
+		<script>
+		let contador = 0;
+
+		let numero = Math.floor(Math.random()* 100) +1;
+		
+		function compara_numero(){
+
+			let submit_input = document.getElementById("campo-enviar");
+			
+			submit_input.value = "Adivina! ("+contador+")";
+			
+			let my_num_input = document.getElementById("numero");
+			
+			let num = document.getElementById("numero").value;
+			
+			let resultado = document.getElementById("resultado");
+			if (num < 1 || num > 100 || num == ""){
+				return;
+			}
+			else{
+				contador++;
+			
+			
+			console.log(num);
+			
+			if (num > numero){
+			resultado.innerHTML = "<em class=\"error\">El numero introducido es mas grande que "+num+"</em>";
+			<!-- resultado.style.color = "red"; -->
+			}
+			else if (num < numero){
+			resultado.innerHTML = "<em class=\"error\">El numero introducido es mas pequeño que "+num+"</em>";
+			<!-- resultado.style.color = "red"; -->
+			}
+			else {
+			resultado.innerHTML = "<em class=\"win\">Has Ganado era "+num+"</em>";
+			<!-- resultado.style.color = "green"; -->
+			
+			}
+	
+			my_num_input.value = "";
+			my_num_input.focus();
+		}
+		}
+
+		</script>
+		
 	</head>
 	
 		<body>
 			<header>
 				<h1>Raul Sanchez</h1>
-				<nav>
+				<nav class="navegacion-web">
 					<ul>
 						<li><a href="index.html">Home</a></li>
 						<li><a href="CV.html">CV</a></li>
@@ -20,12 +67,15 @@
 			</header>
 		<main>
 			<form>
+				<h2>Adivina el numero </h2>
+				<p>Adivina el numero que he generado. Es un numero entre el <strong>1 </strong> y el <strong>100 </strong></p>
+				<p id="resultado">Prueba Suerte!</p>
 				<p><label for="numero">Numero: </label><input type="number" name="tu-numero" id="numero"/></p>
-				<p><label for ="campo-enviar"></label><input type="submit" name="Enviar" id="campo-enviar"/></p>
+				<p><label for ="campo-enviar"></label><input type="button" id="campo-enviar" value="Adivina!" onClick="compara_numero();"/></p>
 			</form>
         </main>
         <footer>
-			<nav>
+			<nav class="navegacion-web">
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="CV.html">CV</a></li>
