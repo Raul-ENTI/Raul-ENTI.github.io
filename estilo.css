@@ -43,12 +43,13 @@ header nav ul a:hover {
 	background-color: #40A2D8;
 	font-weight: bold;
 	padding: 16px 16px 16px 16px;
+	transform: scale(1.1);
+    transition: 0.3s ease;
 }
 
 main p {
 	text-align: justify;
 }
-
 footer {
 	background-color: #F0EDCF; 
 	display: flex;
@@ -78,4 +79,8 @@ footer nav ul a:hover {
 }
 .win{
 	color: #00ff00;
+}
+
+.error-contact{
+	color: #ff0000;
 }
