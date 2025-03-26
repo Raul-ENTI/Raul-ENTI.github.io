@@ -73,3 +73,9 @@ footer nav ul a {
 footer nav ul a:hover {
 	font-weight: bold;
 		}
+.error{
+	color: #ff0000;
+}
+.win{
+	color: #00ff00;
+}
