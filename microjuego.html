@@ -28,7 +28,10 @@
 			
 			
 			console.log(num);
-			
+
+			if (contador >= 10){
+				sumbit_input = true;
+			}
 			if (num > numero){
 			resultado.innerHTML = "<em class=\"error\">El numero introducido es mas grande que "+num+"</em>";
 			<!-- resultado.style.color = "red"; -->
@@ -42,9 +45,7 @@
 			<!-- resultado.style.color = "green"; -->
 			
 			}
-			if (contador >= 10){
-				disable.button = true;
-			}
+
 	
 			my_num_input.value = "";
 			my_num_input.focus();
