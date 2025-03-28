@@ -89,3 +89,8 @@ footer nav ul a:hover {
 .error-contact{
 	color: #ff0000;
 }
+
+#campo-comentario{
+	width:200px;
+	height:150px;
+}
