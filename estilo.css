@@ -57,6 +57,11 @@ footer {
 	justify-content: space-between;
 	align-items: center;
 	padding: 5px 16px 5px 16px;
+	position: absolute;
+	bottom: 0;
+	width: auto;
+	right:0;
+	left:0;
 }
 footer p{
 	color: #0B60B0;
