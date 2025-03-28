@@ -29,8 +29,9 @@
 			
 			console.log(num);
 
-			if (contador >= 10){
+			if (contador > 10){
 				sumbit_input.disable = true;
+				return;
 			}
 			if (num > numero){
 			resultado.innerHTML = "<em class=\"error\">El numero introducido es mas grande que "+num+"</em>";
