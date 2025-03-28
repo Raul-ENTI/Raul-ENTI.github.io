@@ -25,7 +25,7 @@
 			}
 			else{
 				contador++;
-			if (contador === 10){
+			if (contador > 10){
 				submit_input.disabled = true;
 				resultado.innerHTML = "<em class=\"error\"> Ya has realizado 10 intentos</em>";
 				return;
