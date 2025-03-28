@@ -12,6 +12,8 @@
 		function compara_numero(){
 
 			let submit_input = document.getElementById("campo-enviar");
+
+			submit_input.value = "Adivina! ("+contador+")";
 			
 			let my_num_input = document.getElementById("numero");
 			
@@ -46,7 +48,6 @@
 	
 			my_num_input.value = "";
 			my_num_input.focus();
-			submit_input.value = "Adivina! ("+contador+")";
 		}
 		}
 
