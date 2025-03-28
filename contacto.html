@@ -4,7 +4,46 @@
 		<title>Raul Sanchez</title>
 		<link rel="stylesheet" href="estilo.css"/>
 		
-		<script> 
+		
+	</head>
+	
+		<body>
+			<header>
+				<h1>Raul Sanchez</h1>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="CV.html">CV</a></li>
+						<li><a href="hobbies.html">Hobbies</a></li>
+						<li><a href="microjuego.html">MicroJuego</a></li>
+						<li><a href="contacto.html">Contacto</a></li>
+					</ul>
+				</nav>
+			</header>
+		<main>
+			<form>
+				<p id="nombre-campo"><label for ="campo-nombre">Nombre: </label><input type="text" name="Nombre" id="campo-nombre"/></p>
+				<p id="numero-campo"><label for="campo-numero">Edad: </label><input type="number" name="Edad" id="campo-numero" max="120"/></p>
+				<p id="password-campo"><label for="campo-pass">Password: </label><input type ="password" name="Password" id="campo-pass"/></p>
+				<p id="check-campo"><input type="checkbox" name="Check" id="campo-checkbox"/><label for ="campo-checkbox"> Acepta los terminos</label></p>
+				<p id="color-campo"><label for="campo-color">Color Favorito: </label><input type ="color" name="color" id="campo-color"/></p>
+				<p><label for ="campo-enviar"></label><input type="submit" name="Enviar" id="campo-enviar" onclick="dejarValor();"/></p>
+			</form>
+        </main>
+        <footer>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="CV.html">CV</a></li>
+					<li><a href="hobbies.html">Hobbies</a></li>
+					<li><a href="microjuego.html">MicroJuego</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+            <p>Raul Sanchez (c) 2025</p>
+        </footer>
+    </body>
+	<script> 
 		function dejarValor(){
 			let nombre_input = document.getElementById("campo-nombre");
 			let edad_input = document.getElementById("campo-numero");
@@ -55,42 +94,4 @@
 			}
 		}
 		</script>
-	</head>
-	
-		<body>
-			<header>
-				<h1>Raul Sanchez</h1>
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="CV.html">CV</a></li>
-						<li><a href="hobbies.html">Hobbies</a></li>
-						<li><a href="microjuego.html">MicroJuego</a></li>
-						<li><a href="contacto.html">Contacto</a></li>
-					</ul>
-				</nav>
-			</header>
-		<main>
-			<form>
-				<p id="nombre-campo"><label for ="campo-nombre">Nombre: </label><input type="text" name="Nombre" id="campo-nombre"/></p>
-				<p id="numero-campo"><label for="campo-numero">Edad: </label><input type="number" name="Edad" id="campo-numero" max="120"/></p>
-				<p id="password-campo"><label for="campo-pass">Password: </label><input type ="password" name="Password" id="campo-pass"/></p>
-				<p id="check-campo"><input type="checkbox" name="Check" id="campo-checkbox"/><label for ="campo-checkbox"> Acepta los terminos</label></p>
-				<p id="color-campo"><label for="campo-color">Color Favorito: </label><input type ="color" name="color" id="campo-color"/></p>
-				<p><label for ="campo-enviar"></label><input type="submit" name="Enviar" id="campo-enviar" onclick="dejarValor();"/></p>
-			</form>
-        </main>
-        <footer>
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="CV.html">CV</a></li>
-					<li><a href="hobbies.html">Hobbies</a></li>
-					<li><a href="microjuego.html">MicroJuego</a></li>
-					<li><a href="contacto.html">Contacto</a></li>
-				</ul>
-			</nav>
-            <p>Raul Sanchez (c) 2025</p>
-        </footer>
-    </body>
 </html>
