@@ -25,12 +25,9 @@
 			}
 			else{
 				contador++;
-			
-			
-			console.log(num);
-
 			if (contador > 10){
 				sumbit_input.disable = true;
+				resultado.innerHTML = "<em class=\"error\"> Ya has realizado 10 intentos</em>";
 				return;
 			}
 			if (num > numero){
