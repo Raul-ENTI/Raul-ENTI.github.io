@@ -13,8 +13,6 @@
 
 			let submit_input = document.getElementById("campo-enviar");
 			
-			submit_input.value = "Adivina! ("+contador+")";
-			
 			let my_num_input = document.getElementById("numero");
 			
 			let num = document.getElementById("numero").value;
@@ -48,6 +46,7 @@
 	
 			my_num_input.value = "";
 			my_num_input.focus();
+			submit_input.value = "Adivina! ("+contador+")";
 		}
 		}
 
