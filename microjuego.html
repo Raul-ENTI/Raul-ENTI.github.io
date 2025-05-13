@@ -2,15 +2,16 @@
 <html>
 	<head>
 		<title>Raul Sanchez</title>
-		<link rel="stylesheet" href="estilo.css"/>
-		
 		<script type="text/javascript" src="microjuegito.js"></script>
-		
+		<link rel="stylesheet" href="estilo.css"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">	
 	</head>
 	
 		<body>
 			<header>
-				<h1>Raul Sanchez</h1>
+			<h1 class="titulo"><a href="index.html">Raul Sanchez</a></h1>
 				<nav class="navegacion-web">
 					<ul>
 						<li><a href="index.html">Home</a></li>
@@ -22,6 +23,7 @@
 				</nav>
 			</header>
 		<main>
+		<section class="adivina-numero">
 			<form>
 				<h2>Adivina el numero </h2>
 				<p>Adivina el numero que he generado. Es un numero entre el <strong>1 </strong> y el <strong>100 </strong></p>
@@ -29,6 +31,8 @@
 				<p><label for="numero">Numero: </label><input type="number" name="tu-numero" id="numero"/></p>
 				<p><label for ="campo-enviar"></label><input type="button" id="campo-enviar" value="Adivina!" onClick="compara_numero();"/></p>
 			</form>
+		</section>
+
         </main>
         <footer>
 			<nav class="navegacion-web">
@@ -40,7 +44,7 @@
 					<li><a href="contacto.html">Contacto</a></li>
 				</ul>
 			</nav>
-            <p>Raul Sanchez (c) 2025</p>
+            <p>Raul Sanchez © 2025</p>
         </footer>
     </body>
 </html>

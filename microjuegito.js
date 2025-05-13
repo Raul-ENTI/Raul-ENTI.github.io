@@ -1,8 +1,8 @@
-		let contador = 0;
+		let contador = 1;
 
 		let numero = Math.floor(Math.random()* 100) +1;
 
-		let attempt_max = 10;
+		let attempt_max = 11;
 		
 		function compara_numero(){
 
@@ -26,12 +26,12 @@
 				return;
 			}
 			if (num > numero){
-			resultado.innerHTML = "<em class=\"error\">El numero introducido es mas grande que "+num+"</em>";
+			resultado.innerHTML = "<em class=\"error\">El numero indicado es mas pequeño que "+num+"</em>";
 			<!-- resultado.style.color = "red"; -->
 			my_num_input.style.border = "1px solid #ff0000";
 			}
 			else if (num < numero){
-			resultado.innerHTML = "<em class=\"error\">El numero introducido es mas pequeño que "+num+"</em>";
+			resultado.innerHTML = "<em class=\"error\">El numero indicado es mas grande que "+num+"</em>";
 			<!-- resultado.style.color = "red"; -->
 			my_num_input.style.border = "1px solid #ff0000";
 

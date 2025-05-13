@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 			console.log("JAJAJAJA! Tu alma es mia");
 		}
 		else {
-			console.log("Acepta Furcia!!!!!");
+			console.log("Acepta!!!!!");
 		}
 	});
 	
